@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <!-- CSS link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Menu button -->
+<div class="menu-btn" onclick="openMenu()">☰</div>
+
+<!-- Overlay menu -->
+<div id="menu" class="overlay">
+  <div class="overlay-content">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="shop.html" onclick="closeMenu()">Shop</a>
+    <a href="cart.html" onclick="closeMenu()">Cart</a>
+  </div>
+</div>
+
+<!-- Main shop content -->
+<div class="container">
+  <h1>Shop</h1>
+  <div id="products"></div>
+</div>
+
+<!-- JS link -->
+<script src="main.js"></script>
+</body>
+</html>

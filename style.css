@@ -1,0 +1,98 @@
+/* --- Global styles --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+h1, h2 {
+  letter-spacing: 2px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, select {
+  padding: 10px;
+  margin-top: 10px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* --- Overlay menu --- */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.95);
+  overflow-x: hidden;
+  transition: 0.4s;
+  z-index: 1000;
+}
+
+.overlay-content {
+  position: relative;
+  top: 30%;
+  text-align: center;
+}
+
+.overlay a {
+  display: block;
+  font-size: 30px;
+  padding: 15px;
+  transition: color 0.2s;
+}
+
+.overlay a:hover {
+  color: #ddd;
+}
+
+/* --- Products --- */
+.product {
+  border: 1px solid #444;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .product {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
